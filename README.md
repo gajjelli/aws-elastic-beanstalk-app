@@ -2,15 +2,19 @@
 
 ## War File BuildName
 
-target/shipwreck-app-1.0-SNAPSHOT.war
+target/shipwreck-app-1.1-SNAPSHOT.war
 
 ## Configure Ec2 Jenkins Ubuntu
 
 To Install Java
 ----------------
+sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
-
 sudo apt-get install openjdk-8-jdk
+
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+java -version
 
 To Install Jenkins
 -------------------
@@ -31,7 +35,7 @@ sudo service jenkins start
 
 Install Maven,CodePipeline plugin
 
-Configure Maven 
+Configure Maven
 Configure Java
 
 sudo update-alternatives --config javac
